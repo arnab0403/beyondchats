@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function ChatProfile({ data }) {
+  const navigate = useNavigate();
   const message =
     data.messages.length < 18
       ? data.messages
@@ -12,8 +15,12 @@ function ChatProfile({ data }) {
     if ("STUVWX".includes(initial)) return "bg-[#FFD93D]";
     return "bg-[#845EC2]";
   }
+
   return (
-    <div className="w-[100%] flex relative pt-[10px] pb-[10px] pl-[5px] pr-[10px] gap-2 rounded-[10px] hover:bg-[#e9eefa] cursor-pointer">
+    <div
+      className="w-[100%] flex relative pt-[10px] pb-[10px] pl-[5px] pr-[10px] gap-2 rounded-[10px] hover:bg-[#e9eefa] cursor-pointer"
+      onClick={() => navigate(`/chat/${data.name}`)}
+    >
       <div>
         <div
           className={`h-[43px] w-[43px] text-[white] rounded-[50%] ${getColorByInitial(

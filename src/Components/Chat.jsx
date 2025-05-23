@@ -9,11 +9,13 @@ import {
   Laugh,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useParams } from "react-router-dom";
 
 function Chat() {
   const [text, setText] = useState("");
   const textareaRef = useRef(null);
-
+  const { name } = useParams();
+  console.log(name);
   const handleChange = (e) => {
     setText(e.target.value);
 
@@ -34,7 +36,7 @@ function Chat() {
       <div className=" h-[50px] pl-[15px] pr-[15px]">
         <div className="flex items-center h-[100%]  justify-between ">
           <div>
-            <h1>User Chat</h1>
+            <h1>{name}</h1>
           </div>
           <div className="flex gap-[10px]">
             <div className="bg-[#ededed] h-[27px] w-[27px] flex justify-center items-center rounded-[4px] cursor-pointer">
@@ -51,6 +53,7 @@ function Chat() {
           </div>
         </div>
         <div className="h-[calc(100vh-50px)]  relative ">
+          {/* {chat portion} */}
           <div className="flex flex-col gap-4">
             <div className="flex  items-center gap-2 max-w-[95%] max-h-[400px]">
               <div className="h-[30px] w-[30px] bg-[#38b3ff] text-[white] rounded-[50%] flex justify-center items-center  left-0 self-end">

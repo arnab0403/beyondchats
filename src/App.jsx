@@ -6,7 +6,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Navbar />}></Route>
-        <Route path="/chat/:id" element={<Navbar />}></Route>
+        <Route path="/chat/:name" element={<Navbar />}></Route>
       </Routes>
     </>
   );

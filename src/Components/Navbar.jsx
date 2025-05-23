@@ -77,11 +77,12 @@ const users = [
 ];
 
 function Navbar() {
-  const { id } = useParams();
+  //getting the parameter from the url
+  const { name } = useParams();
 
   return (
-    <div className="nav w-[100vw] bg-[#fff]">
-      <div className="h-[100vh]">
+    <div className="nav w-[100vw] bg-[#fff] grid grid-cols-[300px_auto]">
+      <div className="h-[100vh] ">
         <div className=" flex items-center pl-[13px] h-[50px]">
           <h1 className="text-[20px] font-medium">Your Inbox</h1>
         </div>
@@ -91,8 +92,8 @@ function Navbar() {
           })}
         </div>
       </div>
-
-      {id && <Chat/>}
+      {/* {redering the chat panel based on the name exit on the url} */}
+      {name && <Chat />}
     </div>
   );
 }
