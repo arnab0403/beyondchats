@@ -79,7 +79,7 @@ const users = [
   },
 ];
 
-function Navbar() {
+function Home() {
   //getting the parameter from the url
   const { name } = useParams();
   const { aiSideBar } = useContext(DataProvider);
@@ -108,4 +108,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Home;

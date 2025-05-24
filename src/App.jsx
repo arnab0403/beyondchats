@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
 import { Route, Routes } from "react-router-dom";
 import DataContext from "./Components/DataContext";
 
@@ -8,8 +8,8 @@ function App() {
     <>
       <DataContext>
         <Routes>
-          <Route path="/" element={<Navbar />}></Route>
-          <Route path="/chat/:name" element={<Navbar />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/chat/:name" element={<Home />}></Route>
         </Routes>
       </DataContext>
     </>
