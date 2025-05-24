@@ -1,6 +1,7 @@
-# BeyondChats
+## Live Demo & Repository
 
-A modern, responsive chat and AI assistant interface built with React and Tailwind CSS.
+- **Deploy Link:** [https://beyondchats-sigma.vercel.app](https://beyondchats-sigma.vercel.app)
+- **GitHub Link:** [https://github.com/arnab0403/beyondchats](https://github.com/arnab0403/beyondchats)
 
 ## Features
 
@@ -59,9 +60,3 @@ src/
   Edit the `message` variable in `AiChat.jsx` for your custom AI response.
 
 ...
-
-## Live Demo & Repository
-
-- **Deploy Link:** [https://beyondchats-sigma.vercel.app](https://beyondchats-sigma.vercel.app)
-- **GitHub Link:** [https://github.com/arnab0403/beyondchats](https://github.com/arnab0403/beyondchats)
-
