@@ -64,7 +64,7 @@ function AiChat() {
         </div>
         <div>
           <p className="text-[17px]">You</p>
-          <p className="text-[15px] font-light">Hii This is Chat Bot</p>
+          <p className="text-[15px] font-light">How do I a refund ?</p>
         </div>
       </div>
 
