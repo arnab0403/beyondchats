@@ -32,7 +32,7 @@ function AiChat() {
       }, 18);
 
       setComposer(true);
-    }, 2000); // 2000ms delay
+    }, 3100); // 2000ms delay
 
     return () => {
       clearTimeout(timeout);
