@@ -87,11 +87,15 @@ function Home() {
     <div
       className={`nav w-[100vw] bg-[#fff] grid ${
         aiSideBar
-          ? "md:grid-cols-[300px_auto_400px] flex"
-          : "md:grid-cols-[300px_auto]"
+          ? "lg:grid-cols-[300px_auto_400px] sm:grid-cols-[auto_400px] flex"
+          : "lg:grid-cols-[300px_auto]"
       } `}
     >
-      <div className={`h-[100vh]  md:block ${name ? "hidden" : ""}`}>
+      <div
+        className={`h-[100vh]  lg:block ${name ? "hidden" : ""} ${
+          aiSideBar ? " sm:hidden" : ""
+        }`}
+      >
         <div className=" flex items-center pl-[13px] h-[50px]">
           <h1 className="text-[20px] font-medium">Your Inbox</h1>
         </div>

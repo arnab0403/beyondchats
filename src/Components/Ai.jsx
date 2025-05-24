@@ -21,11 +21,10 @@ function Ai() {
   const handleSendButton = () => {
     setAiChat(true);
     setInputText("");
-
   };
   return (
     <div
-      className={`h-[100vh] w-[100%] ${aiSideBar ? "md:block" : "hidden"}   `}
+      className={`h-[100vh] w-[100%] ${aiSideBar ? "lg:block" : "hidden"}   `}
     >
       <div className="h-[50px]  flex justify-between pl-2 pr-4 border-b border-b-gray-300">
         <div className="flex">
@@ -86,7 +85,7 @@ function Ai() {
         {/* depending in the suggest it will render this coomponet  */}
         {suggest && (
           <div
-            className={`bg-white h-[30px] w-[60%] flex justify-center items-center z-40 rounded-md self-start ml-[19px] cursor-pointer ${
+            className={`bg-white h-[30px] w-[60%] flex justify-center items-center z-40 rounded-lg self-start ml-[19px] cursor-pointer ${
               animate ? "down" : ""
             } absolute`}
             onClick={handleSuggestButton}

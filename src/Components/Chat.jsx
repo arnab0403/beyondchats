@@ -80,7 +80,7 @@ function Chat() {
     <>
       <div
         className={`pl-[15px] pr-[15px] z-50  bg-white ${
-          aiSideBar ? "hidden md:block" : ""
+          aiSideBar ? "hidden sm:block" : ""
         }`}
       >
         <div className="flex items-center justify-between h-[48px]">
@@ -153,7 +153,7 @@ function Chat() {
               </div>
               <div
                 className="flex justify-center items-center cursor-pointer"
-                onClick={()=>setAiSideBar(true)}
+                onClick={() => setAiSideBar(true)}
               >
                 <h1>AI</h1>
                 <svg

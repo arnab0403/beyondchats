@@ -58,7 +58,7 @@ function AiChat() {
   };
   return (
     <>
-      <div className="bg-white gap-2 flex justify-center items-center z-40 rounded-md self-start ml-[19px]  animate-slideDown">
+      <div className="bg-white gap-2 flex justify-center items-center z-40 rounded-lg self-start ml-[19px]  animate-slideDown">
         <div className=" h-[25px] w-[25px] bg-blue-500 text-white rounded-[50%] text-center text-[15px] self-start">
           <p>L</p>
         </div>
