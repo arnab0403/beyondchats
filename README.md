@@ -7,7 +7,7 @@ A modern, responsive chat and AI assistant interface built with React and Tailwi
 - **Inbox Panel:** See all your recent conversations and users.
 - **Chat Panel:** Real-time chat interface with auto-resizing textarea and message bubbles.
 - **AI Assistant:** Integrated AI sidebar for smart suggestions and typewriter-style responses.
-- **Responsive Design:** 
+- **Responsive Design:**
   - Inbox always visible on desktop.
   - Chat and AI panels hidden on mobile/tablet for a clean experience.
 - **Animated UI:** Smooth transitions and typewriter effects for AI responses.
@@ -37,11 +37,13 @@ src/
 ## How to Run
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Start the development server:**
+
    ```bash
    npm run dev
    ```
@@ -56,6 +58,10 @@ src/
 - **Change AI Message:**  
   Edit the `message` variable in `AiChat.jsx` for your custom AI response.
 
+...
 
+## Live Demo & Repository
 
-**Made with ❤️ for modern chat experiences.**
+- **Deploy Link:** [https://beyondchats-sigma.vercel.app](https://beyondchats-sigma.vercel.app)
+- **GitHub Link:** [https://github.com/arnab0403/beyondchats](https://github.com/arnab0403/beyondchats)
+
