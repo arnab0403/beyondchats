@@ -1,6 +1,9 @@
 import { useParams } from "react-router-dom";
 import Chat from "./Chat";
 import ChatProfile from "./ChatProfile";
+import { useContext } from "react";
+import { DataProvider } from "./DataContext";
+import Ai from "./Ai";
 
 const users = [
   {
@@ -79,10 +82,16 @@ const users = [
 function Navbar() {
   //getting the parameter from the url
   const { name } = useParams();
-
+  const { aiSideBar } = useContext(DataProvider);
   return (
-    <div className="nav w-[100vw] bg-[#fff] grid grid-cols-[300px_auto]">
-      <div className="h-[100vh] ">
+    <div
+      className={`nav w-[100vw] bg-[#fff] grid ${
+        aiSideBar
+          ? "md:grid-cols-[300px_auto_400px] flex"
+          : "md:grid-cols-[300px_auto]"
+      } `}
+    >
+      <div className={`h-[100vh]  md:block ${name ? "hidden" : ""}`}>
         <div className=" flex items-center pl-[13px] h-[50px]">
           <h1 className="text-[20px] font-medium">Your Inbox</h1>
         </div>
@@ -94,6 +103,7 @@ function Navbar() {
       </div>
       {/* {redering the chat panel based on the name exit on the url} */}
       {name && <Chat />}
+      {aiSideBar && <Ai />}
     </div>
   );
 }
